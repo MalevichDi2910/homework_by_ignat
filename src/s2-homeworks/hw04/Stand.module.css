@@ -7,17 +7,22 @@
 .inputs {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 28px;
+    margin-bottom: 80px;
+    margin-left: 100px;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin: 50px 0 50px 0;
+
 }
 
 .checkboxes {
     display: flex;
     flex-direction: column;
     gap: 36px;
+    margin: 0 800px 100px 0;
 }
