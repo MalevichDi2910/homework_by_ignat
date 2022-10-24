@@ -1,6 +1,7 @@
 .input:focus {
     outline: none;
-    border: 1px solid blue;
+    border: 2px solid darkgrey;
+    padding-left: 20px;
 }
 
 .input {

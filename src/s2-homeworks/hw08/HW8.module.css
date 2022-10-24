@@ -1,23 +1,39 @@
 .item {
+    border-bottom: 1px solid lightgrey;
 }
 
 .item:last-of-type {
+
 }
 
 .users {
+    height: 50px;
+    width: 600px;
+    text-align: justify;
+    border-collapse:collapse;
 }
 
 .buttonsContainer {
+    margin: 0 0 20px 120px;
+
 }
 
 .container {
+    margin: 20px 0 0 20px;
 }
 
 .thead {
+    background: lightgrey;
+    font-weight: 600;
 }
 
 .nameCol {
+    display: flex;
+    align-items: start;
+    margin-left: 20px;
+    padding: 10px;
 }
 
 .ageCol {
+    font-weight: 600;
 }
