@@ -44,12 +44,11 @@
 }
 
 .nav a:hover {
-    color: dodgerblue;
+    text-decoration: underline;
 }
 
 .nav a.active {
     color: #0000CD;
-    text-decoration: underline;
 }
 
 .close {
@@ -61,5 +60,5 @@
 }
 
 .close img {
-cursor: pointer;
+    cursor: pointer;
 }
