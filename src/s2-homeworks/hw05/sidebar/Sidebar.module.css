@@ -6,7 +6,6 @@
     position: fixed;
     transition: 850ms;
     background: #FFFFFF;
-    visibility: hidden;
 }
 
 .sidebar.open {
