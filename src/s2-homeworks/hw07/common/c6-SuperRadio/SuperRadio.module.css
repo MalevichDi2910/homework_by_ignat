@@ -1,40 +1,46 @@
 .radio {
+    -webkit-appearance: none;
     appearance: none;
-    background-color: #fff;
+    background-color: white;
     margin: 0;
-    font: inherit;
-    color: black;
-    width: 1.15em;
-    height: 1.15em;
+    width: 1em;
+    height: 1.05em;
     border: 0.15em solid black;
     border-radius: 50%;
+    transform: translateY(-0.075em);
     display: grid;
     place-content: center;
 }
 
 .radio::before {
     content: "";
-    width: 0.70em;
-    height: 0.70em;
+    width: 0.5em;
+    height: 0.55em;
     border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em black;
-
+    background-color: black;
 }
 
 .radio:checked::before {
     transform: scale(1);
-
 }
 
-.label{
-    margin-top: 1em;
-
+.label {
+    display: grid;
+    grid-template-columns: 0.5em auto;
+    gap: 0.1em;
+    line-height: 0.7;
 }
 
 .options {
     display: flex;
     flex-direction: column;
-    margin: 20px 0 0 100px;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.span {
+    margin-left: 10px;
 }
