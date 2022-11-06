@@ -1,14 +1,22 @@
 .buttonsContainer {
+
 }
 
 .clock {
+
 }
 
 .watch {
+    font-size: large;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .watch strong {
+
 }
 
 .more {
+    color: darkgrey;
+    font-weight: lighter;
+    margin: 5px 0 20px 0;
 }

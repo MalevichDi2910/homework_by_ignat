@@ -8,20 +8,16 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-
 }
 
 .checkboxes {
     display: flex;
     flex-direction: column;
     gap: 36px;
-
 }
