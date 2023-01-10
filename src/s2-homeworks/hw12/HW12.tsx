@@ -25,14 +25,12 @@ const themes: themesPropsType[] = [
 
 const HW12 = () => {
     // взять ид темы из редакса
-    const themeId = useSelector<AppStoreType,number>(state => state.theme.themeId)
+    const themeId = useSelector<AppStoreType, number>(state => state.theme.themeId)
     const dispatch = useDispatch()
 
     const change = (id: number) => { //дописать функцию
-            id === 1 ? dispatch(changeThemeId(1)) :
-                id === 2 ? dispatch(changeThemeId(2)) :
-                dispatch(changeThemeId(3))
-            }
+        dispatch(changeThemeId(id))
+    }
 
     useEffect(() => {
         document.documentElement.dataset.theme = themeId + ''
