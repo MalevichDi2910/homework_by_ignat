@@ -29,14 +29,10 @@ const HW12 = () => {
     const dispatch = useDispatch()
 
     const change = (id: number) => { //дописать функцию
-            if (id === 1) {
-                dispatch(changeThemeId(themes[0].id))
-            } else if (id === 2) {
-                dispatch(changeThemeId(2))
-            } else {
+            id === 1 ? dispatch(changeThemeId(1)) :
+                id === 2 ? dispatch(changeThemeId(2)) :
                 dispatch(changeThemeId(3))
             }
-        }
 
     useEffect(() => {
         document.documentElement.dataset.theme = themeId + ''
