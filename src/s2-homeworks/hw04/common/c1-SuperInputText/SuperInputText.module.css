@@ -1,6 +1,6 @@
 .input:focus {
     outline: none;
-    border: 2px solid darkgrey;
+    border: 1px solid #4040ff;
     padding-left: 20px;
 }
 
@@ -9,6 +9,7 @@
     width: 300px;
     border: darkgrey solid 1px;
     border-radius: 4px;
+    padding-left: 20px;
 }
 
 .inputWrapper {
