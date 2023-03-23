@@ -8,11 +8,11 @@ import SuperSort from './common/c10-SuperSort/SuperSort'
 
 /*
 * 1 - дописать SuperPagination
-* 2 - дописать SuperSort +
-* 3 - проверить pureChange тестами +
-* 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15 +/-/+
-* 4 - сделать стили в соответствии с дизайном +
-* 5 - добавить HW15 в HW5/pages/JuniorPlus +
+* 2 - дописать SuperSort
+* 3 - проверить pureChange тестами
+* 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
+* 4 - сделать стили в соответствии с дизайном
+* 5 - добавить HW15 в HW5/pages/JuniorPlus
 * */
 
 type TechType = {
@@ -44,7 +44,7 @@ const HW15 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<TechType[]>([])
 
-    const sendQuery = (params: any) => {
+    const sendQuery = (params: ParamsType | { count: string; page: string }) => {
         setLoading(true)
         getTechs(params as ParamsType)
             .then((res) => {
@@ -61,7 +61,7 @@ const HW15 = () => {
         setCount(newCount)
 
         sendQuery({page: newPage.toString(), count: newCount.toString()})
-        setSearchParams({page: newPage.toString(), count: newCount.toString(), sort})
+        setSearchParams({page: newPage.toString(), count: newCount.toString()})
     }
 
     const onChangeSort = (newSort: string) => {
@@ -69,7 +69,7 @@ const HW15 = () => {
         setPage(1)
 
         sendQuery({count: count, page: 1, sort: newSort})
-        setSearchParams({page: page.toString(), count: count.toString(), sort: newSort})
+        setSearchParams({page: page.toString(), count: count.toString()})
     }
 
     useEffect(() => {
